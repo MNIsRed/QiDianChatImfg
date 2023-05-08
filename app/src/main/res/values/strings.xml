@@ -2,4 +2,5 @@
     <string name="app_name">QiDianChatImg</string>
     <string name="confirm">确定搜索</string>
     <string name="please_input_link">请输入链接</string>
+    <string name="image_content">起点分享的网址对应图片</string>
 </resources>
