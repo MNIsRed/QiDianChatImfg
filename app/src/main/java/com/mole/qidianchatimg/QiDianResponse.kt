@@ -1,11 +1,18 @@
 package com.mole.qidianchatimg
 
+import com.squareup.moshi.JsonClass
+
+/**
+ * 起点接口返回数据类
+ * 使用moshi，每个data class都需要添加@JsonClass(generateAdapter = true)
+ */
+@JsonClass(generateAdapter = true)
 data class QiDianResponse(
     val Data: Data,
     val Message: String,
     val Result: String
 )
-
+@JsonClass(generateAdapter = true)
 data class Data(
     val ABTest: String,
     val AudioCount: String,
@@ -17,13 +24,13 @@ data class Data(
     val TextCount: String,
     val TotalCount: String
 )
-
+@JsonClass(generateAdapter = true)
 data class AuthorInfo(
     val AuthorId: String,
     val AuthorName: String,
     val UserId: String
 )
-
+@JsonClass(generateAdapter = true)
 data class BookInfo(
     val BookId: String,
     val BookName: String,
@@ -36,7 +43,7 @@ data class BookInfo(
     val RefferContent: String,
     val WordsCnt: String
 )
-
+@JsonClass(generateAdapter = true)
 data class DataX(
     val AgreeAmount: String,
     val AudioRoleId: String,
@@ -92,12 +99,12 @@ data class DataX(
     val UserId: String,
     val UserName: String
 )
-
+@JsonClass(generateAdapter = true)
 data class AuditInfo(
     val AuditStatus: String,
     val AuditToast: String
 )
-
+@JsonClass(generateAdapter = true)
 data class RelatedTitleInfo(
     val SerialNumber: String,
     val TitleId: String,
@@ -107,7 +114,7 @@ data class RelatedTitleInfo(
     val TitleSubType: String,
     val TitleType: String
 )
-
+@JsonClass(generateAdapter = true)
 data class TitleInfo(
     val SerialNumber: String,
     val TitleId: String,
