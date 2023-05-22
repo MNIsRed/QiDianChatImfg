@@ -1,6 +1,8 @@
 package com.mole.qidianchatimg
 
-class MainRepository {
+import javax.inject.Inject
+
+class MainRepository @Inject constructor(){
     suspend fun get(url: String): String {
         val api = retrofit.create(Api::class.java)
         return api.get(url)

@@ -9,7 +9,9 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.snackbar.Snackbar
 import com.mole.qidianchatimg.databinding.ActivityMain2Binding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class Main2Activity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
