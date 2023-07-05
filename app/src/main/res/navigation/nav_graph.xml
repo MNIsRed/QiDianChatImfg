@@ -9,5 +9,5 @@
         android:id="@+id/First2Fragment"
         android:name="com.mole.qidianchatimg.First2Fragment"
         android:label="粘贴页面"
-        tools:layout="@layout/fragment_first2"></fragment>
+        tools:layout="@layout/fragment_first2"/>
 </navigation>
